@@ -1,7 +1,6 @@
-package com.example.weatherapp.model;
+package com.example.weatherapp.model.weather;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.List;
 

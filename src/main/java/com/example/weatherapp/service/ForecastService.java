@@ -4,7 +4,6 @@ import com.example.weatherapp.model.forecast.ForecastApiResponse;
 import com.example.weatherapp.model.forecast.ForecastData;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 

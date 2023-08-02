@@ -1,11 +1,10 @@
 package com.example.weatherapp.service;
 
-import com.example.weatherapp.model.Weather;
-import com.example.weatherapp.model.WeatherApiResponse;
-import com.example.weatherapp.model.WeatherData;
+import com.example.weatherapp.model.weather.Weather;
+import com.example.weatherapp.model.weather.WeatherApiResponse;
+import com.example.weatherapp.model.weather.WeatherData;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 

@@ -1,14 +1,12 @@
-package com.example.weatherapp.model;
+package com.example.weatherapp.model.weather;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
 public class Main {
 
     private float temp;
-
 
     @JsonProperty("feels_like")
     private float feelsLike;

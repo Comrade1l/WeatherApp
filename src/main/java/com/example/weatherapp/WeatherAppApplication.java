@@ -2,7 +2,6 @@ package com.example.weatherapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
@@ -15,8 +14,8 @@ public class WeatherAppApplication {
     }
 
     @Bean
-    public RestTemplateBuilder restTemplateBuilder() {
-        return new RestTemplateBuilder();
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
     }
 
 }

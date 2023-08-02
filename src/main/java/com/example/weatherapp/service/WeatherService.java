@@ -3,6 +3,7 @@ package com.example.weatherapp.service;
 import com.example.weatherapp.model.Weather;
 import com.example.weatherapp.model.WeatherApiResponse;
 import com.example.weatherapp.model.WeatherData;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
@@ -12,6 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
+@RequiredArgsConstructor
 public class WeatherService {
 
     @Value("${openweathermap.api.key}")
@@ -20,10 +22,6 @@ public class WeatherService {
             "https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}&units=metric&lang=ru";
 
     private final RestTemplate restTemplate;
-
-    public WeatherService(RestTemplateBuilder restTemplateBuilder) {
-        this.restTemplate = restTemplateBuilder.build();
-    }
 
     public WeatherData getWeatherData(String city) {
         Map<String, String> uriVariables = new HashMap<>();
